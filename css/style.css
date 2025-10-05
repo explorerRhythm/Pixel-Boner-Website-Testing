@@ -1,12 +1,9 @@
 @font-face {
     font-family: 'ArchivoBlack-Regular';
-    /* A name you choose */
     src: url('../fonts/ArchivoBlack-Regular.otf') format('opentype');
     src: url('../fonts/ArchivoBlack-Regular.ttf') format('truetype');
     font-weight: normal;
-    /* or bold / 400 / 700 etc. */
     font-style: normal;
-    /* or italic */
 }
 
 /* CSS Reset */
@@ -20,7 +17,7 @@
 /* CSS RESET */
 
 body {
-    font-family: 'ArchivoBlack-Regular', sans-serif, Arial;
+    font-family: 'ArchivoBlack-Regular', Arial;
     width: 1400px;
     /* Adjust this value as needed, e.g., 960px, 75vw */
     margin-left: auto;
@@ -112,10 +109,18 @@ li:first-child a{
   color: black;
   margin-top: 5.5rem;
   padding-bottom: 0;
+  line-height: 130%;
 }
+/* .big{
+  font-size: 25rem;
+  display: flex;
+  flex-direction: column;
+
+} */
 .hero-text>p{
   font-size: 1.4em;
   padding-top: 0;
+  padding-bottom: 2rem;
   font-weight: 400;
 }
 
@@ -153,20 +158,87 @@ li:first-child a{
 
 .slogan_container{
   display: flex;
+  max-width: 81.688rem;
   justify-content: flex-start;
-  margin-top: 2.5rem;
   font-family: "ArchivoBlack-Regular", sans-serif,Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
+  margin-bottom: 9rem;
 }
 .right{
   display: flex;
-  gap: 5rem;
+  gap: 24rem;
   margin-left: auto;
 }
 .left{
-
   gap: 10rem;
+}
+
+/* WHAT WE DO SECTION STYLING */
+.service{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  max-width: 81rem;
+  gap: 2.5rem;
+  /* line-height: 100%; */
+}
+.cleaning-logo{
+  position: relative;
+}
+#cleaning-mage{
+  position:relative;
+  width: 12.3rem;
+  top: 10px;
+}
+#transparent-orange{
+  position: absolute;
+  width: 12.5rem;
+  left: 5px;
+  top: 13px;
+}
+.service-header{
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.service-text>p{
+  font-weight: 100;
+  line-height: 3.2rem;
+  font-size:1.5rem ;
+
+}
+.second-para>p{
+  display: block;
+  margin-top: 3rem;
+}
+/* SERVICES STYLING */
+#services{
+  margin-top: 5rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+
+/* KEYWORDS MANIPULATION THROUGH FLEXBOX */
+
+.keywords{
+  margin-top: 10rem;
+}
+.thinner{
+  width: 20rem;
+  height: 1px;
+  background-color: #44444E;
+  margin: 0 1rem;
+  opacity: 40%;
+}
+.orange-colored{
+  width: 10rem;
+  height: 1.2rem;
+  background-color: rgb(240, 91, 50);
+}
+.keywords-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* UTILITIES */
 
@@ -176,10 +248,11 @@ li:first-child a{
 
 /* 1D LINES */
 
-.line{
-  width:25%;
-  position: absolute;
-  top: 50%;
+.straight-line{
+  width: 400px;
+  height: 1px;
+ background-color: black;
+ margin-top: 2rem;
 }
 /*ADJUSTEMENTS TO IMAGES, LISTS, NAVBARS */
 a {
