@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'ArchivoBlack-Regular';
+    /* A name you choose */
+    src: url('../fonts/ArchivoBlack-Regular.otf') format('opentype');
+    src: url('../fonts/ArchivoBlack-Regular.ttf') format('truetype');
+    font-weight: normal;
+    /* or bold / 400 / 700 etc. */
+    font-style: normal;
+    /* or italic */
+}
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* CSS RESET */
+
+body {
+    font-family: 'ArchivoBlack-Regular', sans-serif, Arial;
+    width: 1400px;
+    /* Adjust this value as needed, e.g., 960px, 75vw */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero image  */
+#dinosour-logo {
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+
+/* NAVBAR ALIGNMMENT WITH PROPORTION TO LOGOGS */
+.navbar-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 12px 0 2rem 0;
+  margin-top: 1rem;
+}
+
+.nav-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* NAVBAR LIST */
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Each item border – only between items */
+.navbar-list li:not(:last-child) {
+  border-right: 2px solid rgb(130, 99, 99);
+}
+
+/* Links style */
+.navbar-list a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  padding-left:0
+}
+
+li:first-child a{
+  font-weight: bolder;
+}
+
+/* Subtle vertical alignment tweak */
+.navbar-list li {
+  display: flex;
+  align-items: center;
+}
+.navbar-alignment {
+  align-items: flex-end; /* or center depending on alignment */
+}
+
+.nav-icon {
+  transform: translateY(3px); /* adjust +/- px until visually aligned */
+}
+/* HERO SECTION STYLING */
+.hero-container{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  position: relative;
+}
+.hero-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-text:first-child h1{
+  font-size: 5rem;
+  font-weight: 800;
+  color: black;
+  margin-top: 5.5rem;
+  padding-bottom: 0;
+}
+.hero-text>p{
+  font-size: 1.4em;
+  padding-top: 0;
+  font-weight: 400;
+}
+
+.logo-menu{
+  position: relative;
+}
+#dinosour-logo {
+      position: relative;
+      left:8rem; /* Adjust the value as needed */
+    }
+#orange-landing{
+  position: absolute;
+  top: 62.5%;
+  right: 10%;
+  width: 90%;
+}
+.btn-hero{
+  width:8rem;
+  padding: 0.875rem;
+  font-family: "ArchivoBlack-Regular" ,sans-serif , Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  background-color: rgb(240, 91, 50);
+  font-size: 1em;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+.btn-hero:hover{
+  background-color: rgb(118, 26, 0) ;
+  cursor: pointer;
+}
+.button-flex{
+  display: flex;
+  gap: 1rem;
+}
+
+.slogan_container{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2.5rem;
+  font-family: "ArchivoBlack-Regular", sans-serif,Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.right{
+  display: flex;
+  gap: 5rem;
+  margin-left: auto;
+}
+.left{
+
+  gap: 10rem;
+}
+/* UTILITIES */
+
+.zindex{
+  z-index: -1;
+}
+
+/* 1D LINES */
+
+.line{
+  width:25%;
+  position: absolute;
+  top: 50%;
+}
+/*ADJUSTEMENTS TO IMAGES, LISTS, NAVBARS */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+}
+img{
+  max-width: 100%;
+}
