@@ -1,0 +1,23 @@
+{
+  "name": "website-project",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/explorerRhythm/Pixel-Boner-Website-Testing#readme",
+  "bugs": {
+    "url": "https://github.com/explorerRhythm/Pixel-Boner-Website-Testing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/explorerRhythm/Pixel-Boner-Website-Testing.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
