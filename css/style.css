@@ -356,10 +356,15 @@ li:first-child a {
   outline-width: 100%;
   width: 100%;
 }
-.answer p{
+.answer{
   display: none;
+}
+.answer p{
   padding:  1rem 0;
   font-size: 1.3rem;
+}
+button{
+  padding: 0.875rem;
 }
 /* KEYWORDS MANIPULATION THROUGH FLEXBOX */
 
