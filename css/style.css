@@ -331,12 +331,13 @@ li:first-child a {
   text-align: center;
   font-size: 50px;
   padding-bottom: 0.875rem;
+  padding-top: 0.875rem;
 }
 .faq-question-panel{
   position: absolute;
   border: 1px solid rgb(224, 7, 7);
   left: 3.5%;
-  top: 39%;
+  top: 42%;
   height:max-content;
   width: 65rem;
   background-color: #f1f1f1;
@@ -355,6 +356,7 @@ li:first-child a {
   outline-color: #44444e;
   outline-width: 100%;
   width: 100%;
+ 
 }
 .answer{
   display: none;
@@ -362,10 +364,45 @@ li:first-child a {
 .answer p{
   padding:  1rem 0;
   font-size: 1.3rem;
+   border-bottom: 1px solid  #44444e;
 }
 button{
   padding: 0.875rem;
 }
+/* CONTACT SECTION */
+.social{
+  width: 100px;
+}
+.social-4{
+  position: relative;
+  top: 12px;
+}
+.social-icon{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  width: 800px;
+}
+.social-icon-container{
+  display: flex;
+  justify-content: center;
+}
+.contact div h1{
+  margin-top: 6rem;
+  padding: 5rem 0;
+  text-align: center;
+  text-transform:uppercase;
+
+  font-weight: 800;
+  font-size: 4rem;
+  
+}
+
+
+
+
+
+
 /* KEYWORDS MANIPULATION THROUGH FLEXBOX */
 
 .keywords {
@@ -393,7 +430,9 @@ button{
   margin-top: 5rem;
 }
 
-
+#after-invitation{
+  margin-top: 3rem;
+}
 .zindex {
   z-index: -1;
 }
